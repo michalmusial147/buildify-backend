@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+
+    <artifactId>main</artifactId>
+    <packaging>jar</packaging>
+
+    <parent>
+        <groupId>elc</groupId>
+        <artifactId>election-parent</artifactId>
+        <version>0.0.6-SNAPSHOT</version>
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>elc</groupId>
+            <artifactId>data</artifactId>
+            <version>${election.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>elc</groupId>
+            <artifactId>domain</artifactId>
+            <version>${election.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>elc</groupId>
+            <artifactId>web</artifactId>
+            <version>${election.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.4.1211</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <!-- Automated JSON API documentation for API's built with Spring -->
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.7.0</version>
+        </dependency>
+        <dependency>
+            <!-- Generate beautiful documentation from a Swagger-compliant API. -->
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.7.0</version>
+        </dependency>
+
+    </dependencies>
+
+
+</project>
+
+

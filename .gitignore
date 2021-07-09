@@ -1,0 +1,11 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example appUser template template
+### Example appUser template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+.class
+.lst
